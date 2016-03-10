@@ -1,0 +1,5 @@
+#!/bin/sh
+
+# build minified standalone version in dist
+./node_modules/.bin/webpack
+cp ./dist/* ./public/ 

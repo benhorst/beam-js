@@ -1,0 +1,31 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/index.css')
+    link(href='http://fonts.googleapis.com/css?family=Roboto:400,300,700,300italic', rel='stylesheet')
+    block headStyle
+
+    block headScript
+  body
+    section
+      nav
+        div(class="fontmark")
+          a(href="/")="benhorst"
+        div(class="dynamic-nav")
+          block navBar
+      block content
+      footer
+        div(class="boilerplate")
+          ul
+            li
+              a(href="mailto:benpub@benhorst.com")="mail"
+            li
+              a(href="/docs/benhorst_resume.pdf")="resumé"
+            li
+              a(href="https://www.linkedin.com/in/benhorst")="linkedin"
+            li
+              a(href="https://twitter.com/benhorst")="twitter"
+        div(class="dynamic-footer")
+          block footer
+    script(src='index.js')

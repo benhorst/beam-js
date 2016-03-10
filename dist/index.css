@@ -1,0 +1,90 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+body {
+  font: 14px Roboto, Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+*.text-center {
+  text-align: center;
+}
+
+*.content.center {
+  margin: 0 auto;
+}
+
+body > section {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  /* nav bar takes the 3em. stretch to fill otherwise */
+  min-height: calc(100vh - 3.5em);
+  padding-top: 3.5em;
+}
+
+body > section > * {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+}
+
+body > section > nav {
+  position: fixed;
+  top: 0;
+  height: 2em;
+  padding: 0.5em 0;
+  background-color: white;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  box-shadow: 0px 5px 6px -3px rgba(0, 0, 0, 0.2);
+  width: 100vw;
+}
+
+body > section > nav .fontmark {
+  padding: 0 0.8em;
+  border-right: solid 1px rgba(0, 0, 0, 0.2);
+}
+
+body > section > nav .dynamic-nav {
+  margin: 0 0.8em;
+}
+
+body > section > footer {
+  margin-top: 6em;
+  padding: 1em 2em;
+  -webkit-flex-grow: 0;
+  flex-grow: 0;
+  background-color: rgba(0, 0, 0, 0.05);
+
+  display: -webkit-flex;
+  display: flex;
+}
+
+body > section > footer .boilerplate {
+  margin-right: 2em;
+}
+
+body > section > footer .dynamic-footer {
+  border-left: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 1em;
+}
+
+#renderer {
+  margin: 0 auto;
+}
+.HelloWorld {
+  font-size: 22px;
+}
